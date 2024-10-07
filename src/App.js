@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Complaints_Dashboard from "./layouts/Complaints_Dashboard";
+// import AboutUs from "./Views/AboutUs";
+// import Events from "./Views/Events";
+// import Component from "./components/component7";
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="tajawal-light">
+      {/* <AboutUs /> */}
+      {/* <Events /> */}
+      {/* <Component /> */}
+      <Complaints_Dashboard />
     </div>
   );
 }
