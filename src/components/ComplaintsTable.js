@@ -39,10 +39,10 @@ function ComplaintsTable({
       setComplaintsArray(response.data.data);
       console.log("ComplaintsArray loaded");
       // refresh the count of items when the status changes
-      fetchCountOfUnResolved();
-      fetchCountOfInProgress();
-      fetchCountOfResolved();
-      fetchCountOfDeleted();
+      // fetchCountOfUnResolved();
+      // fetchCountOfInProgress();
+      // fetchCountOfResolved();
+      // fetchCountOfDeleted();
     } catch (error) {
       console.error("Error fetching complaints types:", error);
     }
@@ -64,7 +64,7 @@ function ComplaintsTable({
         }
       );
       setComplaintsDeletedArray(response.data.data);
-      console.log("ComplaintsDeletedArray changed");
+      console.log("ComplaintsDeletedArray loaded");
       //refresh the count of items when the status change
       // fetchCountOfUnResolved();
       // fetchCountOfInProgress();
