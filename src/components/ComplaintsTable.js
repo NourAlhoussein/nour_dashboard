@@ -45,6 +45,18 @@ function ComplaintsTable({
       // fetchCountOfDeleted();
     } catch (error) {
       console.error("Error fetching complaints types:", error);
+      if (error.response) {
+        // The request was made and the server responded with a status code
+        console.error("Response data:", error.response.data);
+        console.error("Response status:", error.response.status);
+        console.error("Response headers:", error.response.headers);
+      } else if (error.request) {
+        // The request was made but no response was received
+        console.error("Request made but no response received:", error.request);
+      } else {
+        // Something happened in setting up the request that triggered an error
+        console.error("Error setting up the request:", error.message);
+      }
     }
   };
 
