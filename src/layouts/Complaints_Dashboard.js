@@ -21,7 +21,7 @@ function Complaints() {
       const response = await axios.get(
         "https://tproject.techpundits.net/api/complaint?status=unresolved"
       );
-      if ((response.data.status = 200)) {
+      if ((response.data.status === 200)) {
         setUnResolvedCount(response.data.count);
         console.log("get the count of unResolved array");
       } else {
