@@ -33,16 +33,9 @@ function ComplaintsTable({
   //fetch data and put it in complaints array
   const fetchComplaintsArray = async () => {
     try {
-      const response = await axios.get(
-        "https://tproject.techpundits.net/api/complaint"
-      );
+      const response = await axios.get("https://tproject.techpundits.net/api/complaint");
       setComplaintsArray(response.data.data);
       console.log("ComplaintsArray loaded");
-      // refresh the count of items when the status changes
-      // fetchCountOfUnResolved();
-      // fetchCountOfInProgress();
-      // fetchCountOfResolved();
-      // fetchCountOfDeleted();
     } catch (error) {
       console.error("Error fetching complaints types:", error);
       if (error.response) {
